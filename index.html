@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Inspiré de Roblox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo">Logo</div>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search games, friends...">
+        </div>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Avatar</a>
+            <a href="#">Messages</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="navbar-profile">
+            <img src="profile.jpg" alt="Profile">
+        </div>
+    </nav>
+
+    <!-- Section principale -->
+    <div class="main-content">
+        <h1>Welcome to the game world!</h1>
+        <div class="games-grid">
+            <!-- Exemple de jeu -->
+            <div class="game-card">
+                <img src="game1.jpg" alt="Game Image">
+                <h2>Awesome Game</h2>
+                <p>200K players</p>
+            </div>
+            <div class="game-card">
+                <img src="game2.jpg" alt="Game Image">
+                <h2>Another Game</h2>
+                <p>100K players</p>
+            </div>
+            <!-- Ajouter plus de cartes -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Roblox-Like. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.navbar-search input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                alert('Vous avez cherché : ' + this.value);
+            }
+        });
+    </script>
+</body>
+</html>
